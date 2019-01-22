@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<p id="demo"></p>
+<p id2="demo2"></p>
+
+<script>
+	
+	var student = {
+		
+		firstName: "Alex",
+		lastName: "Wang",
+		grade: "G9",
+		age: "14 Years",
+		id: 5566,
+		id2: 6655,
+		fullName: function() {
+			return this.firstName + " " + this.lastName;
+		}
+		gradelvl: function() {
+		return this.grade + ", " + this.age
+		}
+	};	
+
+document.getElementById("demo").innerHTML = person.fullName();
+document.getElementById("demo2").innerHTML = person.gradelvl();
+</script>
+
+</body>
+</html>
