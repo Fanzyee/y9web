@@ -1,6 +1,6 @@
-<html class="gr__mdjhoel_github_io"><!-- import your data -->
+<html class="y9web"><!-- import your data -->
     
-    <h1>Public Health and Environment - Total Environment</h1>
+    <center><h1>Public Health and Environment - Total Environment</h1></center>
     
     <head>
         
@@ -17,18 +17,20 @@
         var canvas = document.getElementById("myCanvas");
 	    var ctx = canvas.getContext("2d");
         
-        yvalue = 0
+        yvalue = 1
         for (i = 0; i<data.length; i = i + 9) {
             cname = data[i].dims.COUNTRY;
             numdead = parseInt(data[i].Value);
         
-            ctx.fillStyle = "red";
-	        ctx.fillRect(0,yvalue,numdead,10);
+            ctx.fillStyle = "blue";
+	        ctx.fillRect(0,yvalue,numdead,12);
+            ctx.scale(2, 2)
+            ctx.rotat(90, 4)
             
-            ctx.font = "30px Georgia"
+            ctx.font = "15px Georgia";
             ctx.fillStyle = "black";
             ctx.fillText(cname,10,yvalue + 20);
-            yvalue = yvalue + 25;
+            yvalue = yvalue + 35;
         }
     
     </script>
