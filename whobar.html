@@ -11,6 +11,10 @@
     <body data-gr-c-s-loaded="true"><canvas id="myCanvas" width="1000" height="5000">
       Your browser does not support the canvas element.
     </canvas>
+        
+    <canvas id="myCanvas2" width="600" height="600">
+        Your browser does not support the canvas element.
+    </canvas>
     
     <script>
         
@@ -27,12 +31,15 @@
             ctx.scale(2, 2)
             ctx.rotat(90, 4)
             
+            
             ctx.font = "15px Georgia";
             ctx.fillStyle = "black";
             ctx.fillText(cname,10,yvalue + 20);
             yvalue = yvalue + 35;
         }
     
+        var canvas2 = dociment.getElementById("myCanvas2")
+        
     </script>
     
     
