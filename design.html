@@ -1,0 +1,178 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin: 0;
+font-family: Helvetica, sans-serif;
+background-color:deepskyblue
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: none;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #013E59;
+  color: white;
+}
+
+.topnav a{
+        text-decoration: none;
+        color: white;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+}
+        
+.topnav a:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s ease;
+} 
+
+.topnav-right {
+        
+    float: right;
+    
+}
+    
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+    
+</style>
+</head>
+<body>
+<body data-gr-c-s-loaded="true">
+    
+<div class="bgimg-1">
+    <div class="topnav">
+        <a class="active" href="create.html">Home</a>
+        <a onclick="openNav()">Data</a>
+        <div class="topnav-right">
+            <a href="http://apps.who.int/gho/data/node.main.176?lang=en">WHO Data</a>
+        </div>
+    </div>
+</div>  
+<div>
+    <center><u><h1>
+    Fulfillment and changes to my design specifications    
+    </h1></u>
+    <p>Please refer to my Developing Ideas for external information</p></center>
+</div>
+    
+<div>
+    <i><u><h2>Fulfilled Criteria</h2></u>
+    <h5>1. Website must include a HTML5 canvas graph that can:<br><br>
+
+            a) Display multiple countries<br><br>
+    
+    4. Website must include a contrasting and pleasing colour scheme:<br><br>
+
+            a) Text and other programs should be readable<br><br>
+
+            b) The colour scheme should not combat the text or the graphs<br><br>
+    5. The use of space should not be clumped up; website should look modern, dynamic, and minimalist<br><br>
+    6. Website must be able to display information and statistics in a specific way:<br><br>
+
+            a) Basic information must be displayed automatically on the website<br><br>
+                
+
+        b) More specific and external information will be found when the user completes a certain action (e.g. hovering the mouse, clicking, searching, ... etc.)<br><br></h5></i>
+        
+        <u><h2>Changes to My Criteria</h2></u>
+        
+        <h3>1.b Display data in multiple styles (pie chart, bar graph, world graph... etc.)<br><br></h3>
+    
+            <p>Due to time constraints, I was only able to complete the world graph, but other graphs and interactive interfaces will be developed in later release.<br><br></p>
+            
+            <h3>1.c Animate and display excess information when mouse hovers over each subsection of the graph<br><br></h3>
+            <p>Due to time constraints, I was not able to complete an animation for the animation, will be in later release<br><br></p>
+            
+           <h3>2. Website must include filter functions, dropdowns, and autocompletes that sort ".json" data including:<br><br></h3>
+
+            <h3>a) Different countries<br><br></h3>
+            <p>Since I only had a world graph, and was not able to complete a bar graph in time, filtering different countries would not have much impact on my website as the user just needs to click on a section of the world. However, a searchbar for each country will be completed in the next release<br><br></p>
+
+            <h3>b) Different times periods and dates<br><br></h3>
+            <p>I tried to make my world graph input different years and output different information based on the year the user selected, but this was not completed due to time constraints.<br><br></p>
+
+            <h3>c) External information relating to the topic of Cholera<br><br></h3>
+            <p>I tried to colour code each country of the map in terms of severity (red=severe, yellow=moderate, white=safe), however, that meant inputing a colour for all 195 countries in the world, and was not completed due to time constraints. I also tried to loop through my .json data and set the colour of each individual country, but that attempt was unsuccessful. These implementatinos were not completed due to time constraints. Will be included in future release.<br><br></p>
+    <h3>3. Website must include an audio/visual aid to guide the user though the website options include:<br><br></h3>
+
+    <h3>a) A programmed identity (Siri, Alexa) that acts as a tutorial for the website</h3>
+    <p>I was too ambitious, and I could not complete an Artificial Intelligence when many companies such as Tesla and Apple can't. This section wasn't very practical and way too ambitious so I decided to not include this in my design<br><br></p>
+
+    <h3>b) A search bar for "Help"<br><br></h3>
+            <p>My website didn't have too much material and was fairly simple and easy to navigate, making the help bar somewhat unpractical and decided to not include that in my design for that reason and some time constraints.</p>
+        
+    
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="world.html">World Graph</a>
+</div>    
+    
+</body>
+    
+<script>
+    
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    
+    
+</script>     
+    
+
+    
+</html>
